@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# write a script that display the line containing bash wors.
+# You cannot use pgrep
+# shellcheck disable=SC2009
+
+./1-list_your_processes | grep "bash"

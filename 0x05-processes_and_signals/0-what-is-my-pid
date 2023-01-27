@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#writing a script that display it's pid
+#write a script that display it's pid
 
-echo "$$"
+echo $$
 
