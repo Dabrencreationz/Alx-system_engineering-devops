@@ -2,5 +2,5 @@
 
 #writing a script that display it's pid
 
-echo "The current script's PID is $$"
+echo "$$"
 
