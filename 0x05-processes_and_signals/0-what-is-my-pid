@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-
-#write a script that display it's pid
+# This script  displays its PID.
 
 echo $$
-
