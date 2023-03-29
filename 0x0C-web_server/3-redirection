@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Install Nginx, and redirect to Nyan Cat
+# This script configures the Nginx server so that
+# /redirect_me is redirecting to another page
 
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt install nginx -y
-sudo service nginx start
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo chown -R "$USER":"$USER" /var/www
 echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
-new_string='server_name _;\n\n\trewrite \^\/redirect_me https:\/\/www.youtube.com\/watch\?v=QH2-TGUlwu4 permanent;/'
-sudo sed -i "s/server_name _;\$/${new_string}" /etc/nginx/sites-available/default
-sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo sed -i "48i\\\tif (\$request_filename ~ redirect_me){\n\t\t\
+rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n\t}" /etc/nginx/sites-available/default
+
 sudo service nginx restart
