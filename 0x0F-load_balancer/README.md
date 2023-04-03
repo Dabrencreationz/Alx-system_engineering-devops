@@ -1,6 +1,6 @@
-## 0x0F. Load balancer
+# 0x0F. Load balancer
 
-# Background Context 
+## Background Context 
 You have been given 2 additional servers:
 
 *gc-[STUDENT_ID]-web-02-XXXXXXXXXX
@@ -10,4 +10,4 @@ Let’s improve our web stack so that there is redundancy for our web servers. T
 
 For this project, you will need to write Bash scripts to automate your work. All scripts must be designed to configure a brand new Ubuntu server to match the task requirements.
 
-[Introduction to load-balancing and HAproxy] {}https://intranet.alxswe.com/rltoken/B7f3oz8i3Xvvom_YQZzLnQ
+[Introduction to load-balancing and HAproxy] {https://intranet.alxswe.com/rltoken/B7f3oz8i3Xvvom_YQZzLnQ}
