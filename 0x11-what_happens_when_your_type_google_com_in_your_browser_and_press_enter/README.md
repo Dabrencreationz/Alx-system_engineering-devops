@@ -21,3 +21,6 @@ Requirements, your post must cover:
 Publish your blog post on Medium or LinkedIn; share the URL of your blog post in your answer file and in the field below.
 
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
+
+Show the diagram of your task above and finally contribute to a pull request by alex on what happens when.....
+![](https://photos.google.com/photo/AF1QipMw-vHehx4ewROuX2jrFYCSkql4_xsNdzLrc1q_)
