@@ -3,18 +3,22 @@
 import requests
 
 
-def number_of_subscribers(subreddit);
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
-    headers = {'User-Agent': 'Mozilla/5.0'}
+def number_of_subscribers(subreddit)
 
-    #send GET to the API
-    response = requests.get(url, headers=headers, allow_redirections=False)
 
-    # If request was successful, return the number of subs
-    if response.statud_code == 200:
-        return response.json()['data']['subscribers']
+url = f"https://www.reddit.com/r/{subreddit}/about.json"
+headers = {'User-Agent': 'Mozilla/5.0'}
 
-    # If reddit is invalid, return 0
+# send GET to the API
+response = requests.get(url, headers=headers, allow_redirections=False)
+
+# If request was successful, return the number of subs
+if response.statud_code == 200:
+    return response.json()['data']['subscribers']
+
+# If reddit is invalid, return 0
+
+
 elif return.status_code == 404:
     return 0
 
