@@ -7,7 +7,7 @@ def number_of_subscribers(subreddit)
 
 
 url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-headers = {'User-Agent': 'Google Chrome Version 81.0.4044.129'}
+headers = {'User-Agent': 'linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)'}
 
 # send GET to the API
 response = requests.get(url, headers=headers, allow_redirections=False)
